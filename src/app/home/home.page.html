@@ -5,18 +5,11 @@
 </ion-header>
 
 <ion-content>
-    <ion-card routerLink="/detail">
-        <img src="https://picsum.photos/id/167/960/540" />
+    <ion-card *ngFor="let code of list" routerLink="/detail/{{ code }}">
+        <img src="https://picsum.photos/seed/{{ code }}/960/540" />
         <ion-card-header>
-            <ion-card-subtitle>Codice</ion-card-subtitle>
-            <ion-card-title>Titolo talk</ion-card-title>
-        </ion-card-header>
-    </ion-card>
-    <ion-card routerLink="/detail">
-        <img src="https://picsum.photos/id/25/960/540" />
-        <ion-card-header>
-            <ion-card-subtitle>Codice</ion-card-subtitle>
-            <ion-card-title>Titolo talk</ion-card-title>
+            <ion-card-subtitle>{{ code }}</ion-card-subtitle>
+            <ion-card-title>{{ talks[code].title }}</ion-card-title>
         </ion-card-header>
     </ion-card>
 </ion-content>

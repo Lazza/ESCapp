@@ -8,15 +8,15 @@
 </ion-header>
 
 <ion-content>
-    <img src="https://picsum.photos/id/764/960/540">
-    <section padding>
-        <ion-text color="medium">Codice</ion-text>
+    <img *ngIf="talk" src="https://picsum.photos/seed/{{ code }}/960/540">
+    <section *ngIf="talk" padding>
+        <ion-text color="medium">{{ code }}</ion-text>
         <ion-text color="primary">
-            <h1>Titolo talk</h1>
+            <h1>{{ talk.title }}</h1>
         </ion-text>
-        <strong>Relatore</strong>
+        <strong>{{ talk.speaker }}</strong>
         <ion-text color="medium">
-            <p>Giorno &mdash; orario</p>
+            <p>{{ talk.date }} &mdash; {{ talk.time }}</p>
         </ion-text>
     </section>
 </ion-content>
