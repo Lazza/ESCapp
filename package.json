@@ -1,8 +1,8 @@
 {
-  "name": "ESCapp",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "ESC 2019",
+  "version": "1.0.0",
+  "author": "Andrea Lazzarotto",
+  "homepage": "https://andrealazzarotto.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
